@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge /">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+        <div class="logo"><img src="./assets/R Logo1.avif" class="Hello"/></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><img src="./assets/R Logo1.avif" class="Hello"/></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links ">
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+              <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#Certifications" onclick="toggleMenu()">Certifications</a></li>
+              <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+             <img src="./assets/profile-pic1.jpg" alt="Routhu Ramanjaneya Siva Sai Ganesh profile-pic1"/>
+        </div>
+        <div class="section_text">
+           <p class="section_text_p1">Hello I'm</p>
+           <h1 class="title">R.Ramanjaneya Siva Sai Ganesh</h1>
+           <p class="section_text">Developer with Diverse Technical Skills</p>
+           <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Ram_Resume.pdf')">Download cv</button>
+            <button class="btn btn-color-1" onclick="location.href='./#Contact' ">Contact Info</button>
+           </div>
+           <div id="social-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'"/>
+            <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/'"/>
+           </div>
+        </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img  
+            src="./assets/about-pic.jpg"
+            alt="profile picture"
+            class="about-pic"
+           /> 
+        </div>
+        <div class="text-container">
+          <p>
+            I am a final-year B.Tech student specializing in Computer Science Engineering.
+            Throughout my academic journey, I have cultivated  skills in programming and cloud technologies.
+            I have developed expertise in cloud computing and its services,
+             with a focus on designing and deploying scalable and reliable cloud solutions.
+             I am enthusiastic about leveraging my skills and experiences to contribute effectively to new challenges and am eager to continue growing in fields such as software development and cloud technologies.
+          </p>
+        </div>
+      <img 
+        src="./assets/arrow.png" 
+        alt="Arrow icon" class="icon arrow" 
+        onclick="location.href='./#Experience'"
+      />  
+    </section>
+    <section id="Skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+          <div class="skill">
+              <img src="./assets/Python.png" alt="Python">
+              <p class="skill-name">Python</p>
+          </div>
+          <div class="skill">
+              <img src="./assets/Javascript.png" alt="JavaScript">
+              <p class="skill-name">JavaScript</p>
+          </div>
+          <div class="skill">
+              <img src="./assets/Java.webp" alt="Java">
+              <p class="skill-name">Java</p>
+          </div>
+          <div class="skill">
+              <img src="./assets/Git.png" alt="Git">
+              <p class="skill-name">Git</p>
+          </div>
+          <div class="skill">
+              <img src="./assets/Aws.png" alt="AWS">
+              <p class="skill-name">AWS</p>
+            </div>
+            <div class="skill">
+                <img src="./assets/Sql.webp" alt="Sql">
+                <p class="skill-name">Sql</p>
+            </div>
+            <div class="skill">
+                <img src="./assets/MongoDB.png" alt="MongoDB">
+                <p class="skill-name">MongoDB</p>
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+          <p class="section__text__p1">Browse My Recent</p>
+          <h1 class="title">Projects</h1>
+          <div class="Projects-item">
+            <h3>1. 4 Million Sudoku Games - CNN Classification<span class="organization"> (BlackBucks project)</span></h3>
+            <p>Sudoku, a popular logic-based puzzle game, poses challenges in automation due to its diverse grid configurations and intricate patterns.
+            In this project, we present a novel computer vision approach employing Convolutional Neural Networks (CNNs) for the efficient recognition of Sudoku games.
+            Leveraging a dataset comprising four million Sudoku game images, we develop and train a CNN model capable of accurately identifying Sudoku grids within complex backgrounds and varying orientations.
+            We aim to develop an efficient and accurate system capable of interpreting Sudoku puzzles from a diverse set of images, enabling automated solving and digital interaction.</p>
+        </div>
+          <div class="project-item">
+            <h2>2.Portfolio (Web Development project)</h2>
+            <p>I conceptualized, designed, and developed a fully responsive and interactive portfolio website using HTML, CSS, and a touch of JavaScript to showcase my professional journey, skills, and projects. This project reflects my expertise in web development and serves as a platform to highlight my technical achievements and creative problem-solving abilities. The website is hosted and deployed using Netlify, ensuring fast performance, scalability, and a seamless user experience.</p>
+          </div>
+        </div>
+    </section>
+    <section id="Certifications">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="certifications">
+        <ul>
+          <li>
+              <p>C Programming <span class="provider">Coursera</span></p>
+          </li>
+          <li>
+              <p>JAVA <span class="provider">Udemy</span></p>
+          </li>
+          <li>
+              <p>Python <span class="provider">Udemy</span></p>
+          </li>
+          <li>
+              <p>Introduction to the Sorting Algorithms <span class="provider">Simplilearn</span></p>
+          </li>
+          <li>
+              <p>Introduction to HTML, CSS, & JavaScript <span class="provider">Coursera</span></p>
+          </li>
+          <li>
+              <p>AWS Cloud Practitioner Essentials <span class="provider">Coursera</span></p>
+          </li>
+          <li>
+              <p>Cybersecurity Virtual Internship <span class="provider">AICTE</span></p>
+          </li>
+          <li>
+              <p>Cloud Virtual Internship <span class="provider">AICTE</span></p>
+          </li>
+          
+      </ul>
+    </div>
+   </div>
+    </section>
+    <section id="Contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto.examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 R.Ramanjaneya Siva Sai Ganesh.All rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>  
+   
